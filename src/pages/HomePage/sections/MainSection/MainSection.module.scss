@@ -1,11 +1,44 @@
 @import "../../../../styles/base/vars";
 
 .main-section {
+  padding: 0 0 50px 0;
   background-image: url("../../../../assets/images/main-image.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
-  // min-height: 90vh;
-  aspect-ratio: 1380 / 550;
+  // max-height: 650px;
+  aspect-ratio: 1380 / 650;
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  &__description {
+    justify-self: start;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: left;
+    align-items: start;
+    h1 {
+      background-color: #fff;
+      padding: 13px 20px;
+      font-weight: 700;
+      font-size: clamp(16px, 0.75rem + 1.25vw, 30px);
+      line-height: 203%;
+      text-transform: uppercase;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+      span {
+        background-image: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
+        background-size: 100%;
+        background-repeat: repeat;
+        // font-size: clamp(16px, 0.75rem + 1.25vw, 30px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+      }
+    }
+  }
 }

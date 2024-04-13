@@ -8,10 +8,13 @@ const MainSection = () => {
         <div className="container">
           <div className={styles["main-section-row"]}>
             <div className={styles["main-section__description"]}>
-              <h1>Аренда Фото</h1>
+              <h1>
+                <span>Аренда </span>
+                Фото
+              </h1>
               <h1>И видео</h1>
               <h1>оборудования</h1>
-              <div className={styles["main-section__circle"]}></div>
+              {/* <div className={styles["main-section__circle"]}></div> */}
             </div>
           </div>
         </div>

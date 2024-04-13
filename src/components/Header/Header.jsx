@@ -5,6 +5,7 @@ import { PiChartBarDuotone, PiShoppingCart } from "react-icons/pi";
 import { IoIosStarOutline } from "react-icons/io";
 import { CiSearch, CiUser } from "react-icons/ci";
 import { GrUserManager } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [starCount, setStarCount] = React.useState(5);
@@ -17,8 +18,10 @@ export const Header = () => {
           <div className={styles["header-row"]}>
             <div className={styles["header-left"]}>
               <SlMenu size={25} className={styles["header-menu__icon"]} />
-              <h2 className={styles["header__logo"]}>fotoprokat</h2>
-              <span className={styles["header__logo-gradient"]}>24</span>
+              <Link to="/" className={styles["header__logo"]}>
+                <h2 className={styles["header__logo-text"]}>fotoprokat</h2>
+                <span className={styles["header__logo-gradient"]}>24</span>
+              </Link>
             </div>
             <div className={styles["header-right"]}>
               <div className={styles["header-phone"]}>

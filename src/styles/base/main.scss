@@ -1,10 +1,22 @@
-@import "./reset";
 @import "./vars";
+@import "./reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--font-Ubuntu);
   font-size: 14px;
   font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
