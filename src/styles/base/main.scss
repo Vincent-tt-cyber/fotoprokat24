@@ -1,0 +1,13 @@
+@import "./reset";
+@import "./vars";
+
+body {
+  font-family: var(--font-Ubuntu);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
