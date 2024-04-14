@@ -40,9 +40,6 @@
       background-image: linear-gradient(270deg, #8ee901 0%, #4f9c2c 100%);
       font-weight: 800;
       font-size: 21px;
-      // line-height: 124%;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
       background-size: 100%;
       background-repeat: repeat;
       -webkit-background-clip: text;
@@ -72,6 +69,7 @@
     cursor: pointer;
     margin-right: 20px;
     position: relative;
+    // border-right: 1px solid #e3e3e3;
     &__count {
       position: absolute;
       top: -12px;
@@ -88,11 +86,12 @@
       font-size: 12px;
       line-height: 167%;
     }
-    // &:hover {
-    //   svg {
-    //     fill: #4f9c2c;
-    //   }
-    // }
+    &:hover {
+      & .header-star__count {
+        color: #fff;
+        background: var(--linear-background);
+      }
+    }
   }
   &-chart {
     cursor: pointer;
@@ -113,6 +112,12 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 167%;
+    }
+    &:hover {
+      & .header-chart__count {
+        color: #fff;
+        background: var(--linear-background);
+      }
     }
   }
   &-cart {
@@ -135,11 +140,12 @@
       font-size: 12px;
       line-height: 167%;
     }
-    // &:hover {
-    //   svg {
-    //     fill: #4f9c2c;
-    //   }
-    // }
+    &:hover {
+      & .header-cart__count {
+        color: #fff;
+        background: var(--linear-background);
+      }
+    }
   }
   &-tools {
     display: flex;

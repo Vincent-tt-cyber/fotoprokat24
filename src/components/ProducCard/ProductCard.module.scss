@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid #efefef;
+  &__cover {
+    padding: 20px 40px;
+    img {
+      width: 100%;
+    }
+  }
+}

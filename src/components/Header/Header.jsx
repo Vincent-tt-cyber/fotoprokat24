@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   const [starCount, setStarCount] = React.useState(5);
   const [chartCount, setChartCount] = React.useState(7);
-  const [cartCount, setCartCount] = React.useState(7);
+  const [cartCount, setCartCount] = React.useState(2);
   return (
     <>
       <header className={styles["header"]}>
