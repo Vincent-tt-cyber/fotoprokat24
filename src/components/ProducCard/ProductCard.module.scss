@@ -1,9 +1,30 @@
 .card {
   border: 1px solid #efefef;
+  position: relative;
+  margin: 0 12px;
   &__cover {
-    padding: 20px 40px;
+    padding: 25px 45px;
     img {
       width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  &__btn {
+    &-chart {
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    &-star {
+      cursor: pointer;
     }
   }
 }
