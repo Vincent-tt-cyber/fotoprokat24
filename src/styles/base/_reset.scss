@@ -3,10 +3,17 @@ a {
   color: inherit;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 button {
   background: transparent;
   padding: 0;
   margin: 0;
   border: none;
   outline: none;
+  cursor: pointer;
 }

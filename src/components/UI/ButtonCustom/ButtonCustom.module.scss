@@ -3,6 +3,7 @@
 .button {
   &-primary {
     font-size: 14px;
+    font-weight: 700;
     color: #fff;
     background: var(--linear-background);
     padding: 12px 24px;
@@ -10,6 +11,7 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   }
   &-secondary {
+    font-weight: 700;
     font-size: 14px;
     color: #000;
     padding: 12px 24px;
