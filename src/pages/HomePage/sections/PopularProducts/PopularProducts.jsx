@@ -7,28 +7,24 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const PopularProducts = () => {
   const settings = {
     className: "center",
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
     // nexArrow: true,
     // prevArrow: true,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1440,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //       infinite: false,
+    //       dots: true,
+    //     },
+    //   },
+    // ],
   };
 
   const products = [
